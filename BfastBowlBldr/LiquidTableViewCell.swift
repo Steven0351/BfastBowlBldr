@@ -1,25 +1,25 @@
 //
-//  IngredientsTableViewCell.swift
+//  LiquidTableViewCell.swift
 //  BfastBowlBldr
 //
-//  Created by James Slusser on 9/6/17.
+//  Created by James Slusser on 9/20/17.
 //  Copyright © 2017 James Slusser. All rights reserved.
 //
 
 import UIKit
 
-class IngredientsTableViewCell: UITableViewCell {
+class LiquidTableViewCell: UITableViewCell {
+    @IBOutlet weak var liquidImage: UIImageView!
     
-    @IBOutlet weak var ingredientsImage: UIImageView!
-    
-    @IBOutlet weak var ingredientsLabel: UILabel!
-    
-    @IBAction func ingredientsSwitch(_ sender: UISwitch) {
-    
+    @IBOutlet weak var liquidName: UILabel!
+     
+    @IBAction func liquidSwitch(_ sender: UISwitch) {
     }
     
     
+    
     override func awakeFromNib() {
+       
         super.awakeFromNib()
         // Initialization code
     }

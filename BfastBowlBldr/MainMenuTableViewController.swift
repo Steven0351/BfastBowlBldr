@@ -1,47 +1,17 @@
 //
-//  IngredientsTableViewController.swift
+//  MainMenuTableViewController.swift
 //  BfastBowlBldr
 //
-//  Created by James Slusser on 9/6/17.
+//  Created by James Slusser on 9/14/17.
 //  Copyright © 2017 James Slusser. All rights reserved.
 //
 
 import UIKit
 
-class IngredientsTableViewController: UITableViewController {
-    
-    var ingredientsImages = [String]()
-    var ingredientsNames = [String]()
-    var ingredientsText = [String]()
-    var webSite = [String]()
-    var purchaseSite = [String]()
+class MainMenuTableViewController: UITableViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        ingredientsImages = ["Oatmeal.jpg",
-                             "ChiaSeeds.jpg",
-                             "AlmondMilk.jpg"]
-        
-        ingredientsNames = ["Oatmeal",
-                            "Chia Seeds",
-                            "Almond Milk"]
-        
-        ingredientsText = ["Oatmeal copy",
-                           "Chia Seeds copy",
-                           "Almond Milk copy"]
-        
-        webSite = ["https://www.wikipedia.org",
-                   "https://www.wikipedia.org",
-                   "https://www.wikipedia.org"]
-        
-        purchaseSite = ["https://www.amazon.com",
-                        "https://www.amazon.com",
-                        "https://www.amazon.com",]
-        
-        
-        tableView.estimatedRowHeight = 10
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -64,21 +34,18 @@ class IngredientsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return ingredientsNames.count
-  
+        return 6
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "IngredientsTableCell", for: indexPath) as! IngredientsTableViewCell
-        let row = indexPath.row
-        cell.ingredientsImage.image = UIImage(named: ingredientsImages[row])
-        cell.ingredientsLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
-        cell.ingredientsLabel.text = ingredientsNames[row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
 
         return cell
     }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -115,23 +82,14 @@ class IngredientsTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "ShowIngredientsDetails" {
-            let detailViewController = segue.destination as! IngredientsDetailViewController
-            let myIndexPath = self.tableView.indexPathForSelectedRow!
-            let row = myIndexPath.row
-            detailViewController.wikiSite = webSite[row]
-            detailViewController.copyDetail = ingredientsText[row]
-            detailViewController.imageDetail = ingredientsImages[row]
-            
-        }
     }
-    
+    */
 
 }
