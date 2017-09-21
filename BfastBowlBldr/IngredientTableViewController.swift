@@ -59,18 +59,18 @@ class IngredientTableViewController: UITableViewController {
         ]
         
         grainInfo = [
-            "https://en.wikipedia.org",
-            "https://en.wikipedia.org",
-            "https://en.wikipedia.org",
+            "https://draxe.com/barley-nutrition/",
+            "https://draxe.com/buckwheat-nutrition/",
+            "https://draxe.com/bulgur-wheat/",
             "https://en.wikipedia.org",
             "https://en.wikipedia.org",
             "https://en.wikipedia.org",
             "https://en.wikipedia.org",]
         
         grainPurch = [
-            "https://www.amazon.com",
-            "https://www.amazon.com",
-            "https://www.amazon.com",
+            "https://www.amazon.com/Bobs-Red-Mill-Pearl-Barley/dp/B004T33Y8O/ref=sr_1_6_a_it?th=1",
+            "https://www.amazon.com/Arrowhead-Mills-Organic-Buckwheat-Groats/dp/B00X2SEAXA/ref=sr_1_1_s_it",
+            "https://www.amazon.com/Bobs-Red-Mill-Bulgur-Wheat/dp/B0013JK0KM/ref=sr_1_3_s_it",
             "https://www.amazon.com",
             "https://www.amazon.com",
             "https://www.amazon.com",
