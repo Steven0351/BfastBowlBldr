@@ -10,8 +10,9 @@ import UIKit
 
 class HowItWorksViewController: UIViewController {
 
-    @IBOutlet weak var howitworksLabel: UILabel!
+   
     
+    @IBOutlet weak var howitworksText: UITextView!
     
     let hiwCopy = """
     Breakfast Bowls are assembled the night before the morning you plan to eat them.  You select and combine a base grain, liquid, and whatever add-ins you like, and then let the mixture soak overnight in the refrigerator.  The following morning, add the fresh fruit and any additional toppings as desired, and enjoy!
@@ -33,7 +34,7 @@ class HowItWorksViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        howitworksLabel.text = hiwCopy
+        howitworksText.text = hiwCopy
      
         
         // Do any additional setup after loading the view.

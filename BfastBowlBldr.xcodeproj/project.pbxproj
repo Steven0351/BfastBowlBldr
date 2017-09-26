@@ -28,6 +28,7 @@
 		94BC06821F6037BD0075A5BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BC06801F6037BD0075A5BF /* Main.storyboard */; };
 		94BC06841F6037BD0075A5BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94BC06831F6037BD0075A5BF /* Assets.xcassets */; };
 		94BC06871F6037BD0075A5BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BC06851F6037BD0075A5BF /* LaunchScreen.storyboard */; };
+		94F2F80C1F7AA71200C95907 /* BuildYourBowlTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F2F80B1F7AA71200C95907 /* BuildYourBowlTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		94BC06831F6037BD0075A5BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94BC06861F6037BD0075A5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94BC06881F6037BD0075A5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94F2F80B1F7AA71200C95907 /* BuildYourBowlTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildYourBowlTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				9493AA7A1F72D18F00F6604B /* FruitTableViewCell.swift */,
 				9493AA7E1F72D94F00F6604B /* ToppingTableViewController.swift */,
 				9493AA7C1F72D93E00F6604B /* ToppingTableViewCell.swift */,
+				94F2F80B1F7AA71200C95907 /* BuildYourBowlTableViewController.swift */,
 				94BC06801F6037BD0075A5BF /* Main.storyboard */,
 				948766511F731AAD00971F42 /* HowItWorksViewController.swift */,
 				9493AA701F72C18900F6604B /* EquipmentTableViewController.swift */,
@@ -198,6 +201,7 @@
 				9493AA731F72C19C00F6604B /* EquipmentTableViewCell.swift in Sources */,
 				9493AA6D1F72B50100F6604B /* LiquidTableViewController.swift in Sources */,
 				9493AA751F72C9F500F6604B /* AddInTableViewCell.swift in Sources */,
+				94F2F80C1F7AA71200C95907 /* BuildYourBowlTableViewController.swift in Sources */,
 				943274AF1F6B3CB900E341A2 /* IngredientDetailViewController.swift in Sources */,
 				948766521F731AAD00971F42 /* HowItWorksViewController.swift in Sources */,
 				9493AA6F1F72B51100F6604B /* LiquidTableViewCell.swift in Sources */,

@@ -8,13 +8,35 @@
 
 import UIKit
 
+var bowlGrain = [String]()
+var bowlGrainImage = [String]()
 
 
-class IngredientTableViewController: UITableViewController {
+
+class IngredientTableViewController: UITableViewController, CellProtocol {
+    
+    func switchButtonTapped(WithStatus status: Bool, ForCell myCell: IngredientTableViewCell) {
+        
+        let indexPath = self.tableView.indexPath(for: myCell)
+        print("cell at indexpath \(String(describing: indexPath)) tapped with switch status \(status)")
+        
+        let grainSwitchSelected = myCell.ingredientName.text!
+        print("Grain selected was \(String(describing: grainSwitchSelected))")
+        
+      //  let grainImageSelected = myCell.ingredientImage.image
+        
+        // insert code to determine if grain was selected i.e. switched (true) and then add to new array in order to pass to BuildYourBowl controller/scene.  Also need to remove from array if sweitched to false prior to selecting button to move to next screen
+        // bowlGrain += grainSwitchSelected
+        // bowlGrainImage += grainImageSelected
+        
+    }
+    
     
     @IBAction func grainSelected(_ sender: UIButton) {
-        // insert code to determine if grain was selected i.e. switched and then add to new array in order to build final bowl later
-    }
+     
+        // pass bowlGrain and bowlGrainImage to next
+        }
+
     
     var grainImages = [String]()
     var grainNames = [String]()
@@ -22,11 +44,13 @@ class IngredientTableViewController: UITableViewController {
     var grainInfo = [String]()
     var grainPurch = [String]()
     
-   // var isOn: Bool { get set }
+   
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
         
         grainImages = [
             "Barley.jpg",
@@ -114,11 +138,13 @@ class IngredientTableViewController: UITableViewController {
         cell.ingredientImage.image = UIImage(named: grainImages[row])
       //  cell.ingredientSwitch.isOn
         // Configure the cell...
+        cell.delegate = self
 
         return cell
     }
     
-
+   
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -173,5 +199,5 @@ class IngredientTableViewController: UITableViewController {
        
     }
     
-
+    
 }

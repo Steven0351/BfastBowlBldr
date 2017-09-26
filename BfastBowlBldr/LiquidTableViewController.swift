@@ -20,13 +20,13 @@ class LiquidTableViewController: UITableViewController {
         super.viewDidLoad()
         
         liquidImages = ["AlmondMilk.jpg",
+                        "Cashewmilk.jpg",
                         "icon.jpg",
                         "icon.jpg",
                         "icon.jpg",
                         "icon.jpg",
                         "icon.jpg",
-                        "icon.jpg",
-                        "icon.jpg"]
+                        "Soymilk.jpg"]
         
         liquidNames = ["Almond Milk",
                        "Cashew Milk",

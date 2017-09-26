@@ -24,7 +24,8 @@ class ToppingTableViewController: UITableViewController {
                          "icon.jpg",
                          "icon.jpg",
                          "icon.jpg",
-                         "icon.jpg",
+                         "Walnut.jpg",
+                         "Wheatgerm.jpg",
                          "icon.jpg"
         ]
         
@@ -34,6 +35,7 @@ class ToppingTableViewController: UITableViewController {
                         "Pumpkin Seed",
                         "Sunflower Seed",
                         "Walnuts",
+                        "Wheat Germ",
                         "Yogurt - Coconut"
         ]
         
@@ -43,6 +45,7 @@ class ToppingTableViewController: UITableViewController {
                        "Pumpkin Seed copy",
                        "Sunflower Seed copy",
                        "Walnut copy",
+                       "Wheat Germ copy",
                        "Yogurt - Coconut copy"
         ]
         
@@ -52,10 +55,12 @@ class ToppingTableViewController: UITableViewController {
                        "https://en.wikipedia.org",
                        "https://en.wikipedia.org",
                        "https://en.wikipedia.org",
+                       "https://en.wikipedia.org",
                        "https://en.wikipedia.org"
         ]
         
         toppingPurch = ["https://www.amazon.com",
+                        "https://www.amazon.com",
                         "https://www.amazon.com",
                         "https://www.amazon.com",
                         "https://www.amazon.com",
