@@ -15,6 +15,8 @@ class LiquidTableViewController: UITableViewController {
     var liquidCopy = [String]()
     var liquidInfo = [String]()
     var liquidPurch = [String]()
+  
+    var selectedIngredients = [Ingredient]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +68,11 @@ class LiquidTableViewController: UITableViewController {
         
         
         tableView.estimatedRowHeight = 50
+      
+        for inregedient in selectedIngredients {
+          print(inregedient.name)
+        }
+      
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62F55EF61F7D7B1D0048F815 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F55EF51F7D7B1D0048F815 /* Ingredient.swift */; };
 		943274A91F6B09FF00E341A2 /* MainMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943274A81F6B09FF00E341A2 /* MainMenuTableViewController.swift */; };
 		943274AB1F6B2FAF00E341A2 /* IngredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943274AA1F6B2FAF00E341A2 /* IngredientTableViewController.swift */; };
 		943274AD1F6B300700E341A2 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943274AC1F6B300700E341A2 /* IngredientTableViewCell.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62F55EF51F7D7B1D0048F815 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		943274A81F6B09FF00E341A2 /* MainMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuTableViewController.swift; sourceTree = "<group>"; };
 		943274AA1F6B2FAF00E341A2 /* IngredientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewController.swift; sourceTree = "<group>"; };
 		943274AC1F6B300700E341A2 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				94BC06831F6037BD0075A5BF /* Assets.xcassets */,
 				94BC06851F6037BD0075A5BF /* LaunchScreen.storyboard */,
 				94BC06881F6037BD0075A5BF /* Info.plist */,
+				62F55EF51F7D7B1D0048F815 /* Ingredient.swift */,
 			);
 			path = BfastBowlBldr;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				9493AA711F72C18900F6604B /* EquipmentTableViewController.swift in Sources */,
 				94BC067D1F6037BD0075A5BF /* AppDelegate.swift in Sources */,
 				9497824A1F6C3261003AB3E7 /* WebsiteViewController.swift in Sources */,
+				62F55EF61F7D7B1D0048F815 /* Ingredient.swift in Sources */,
 				9493AA731F72C19C00F6604B /* EquipmentTableViewCell.swift in Sources */,
 				9493AA6D1F72B50100F6604B /* LiquidTableViewController.swift in Sources */,
 				9493AA751F72C9F500F6604B /* AddInTableViewCell.swift in Sources */,
