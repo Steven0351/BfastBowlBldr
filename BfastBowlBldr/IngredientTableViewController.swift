@@ -8,12 +8,28 @@
 
 import UIKit
 
-var bowlGrain = [String]()
-var bowlGrainImage = [String]()
-
-
-
 class IngredientTableViewController: UITableViewController, CellProtocol {
+    
+    struct Ingredient {
+        let name: String
+        let imageString: String
+        let copy: String
+        let info: String
+        let purchaseURL: String
+        let type: IngredientType
+    }
+    
+    enum IngredientType {
+        case grain, liquid, fruit, addIn, topping
+    }
+    
+    var ingredients = [Ingredient]()
+    
+    var grainImages = [String]()
+    var grainNames = [String]()
+    var grainCopy = [String]()
+    var grainInfo = [String]()
+    var grainPurch = [String]()
     
     func switchButtonTapped(WithStatus status: Bool, ForCell myCell: IngredientTableViewCell) {
         
@@ -22,35 +38,26 @@ class IngredientTableViewController: UITableViewController, CellProtocol {
         
         let grainSwitchSelected = myCell.ingredientName.text!
         print("Grain selected was \(String(describing: grainSwitchSelected))")
-        
-      //  let grainImageSelected = myCell.ingredientImage.image
-        
-        // insert code to determine if grain was selected i.e. switched (true) and then add to new array in order to pass to BuildYourBowl controller/scene.  Also need to remove from array if sweitched to false prior to selecting button to move to next screen
-        // bowlGrain += grainSwitchSelected
-        // bowlGrainImage += grainImageSelected
-        
     }
     
     
     @IBAction func grainSelected(_ sender: UIButton) {
-     
-        // pass bowlGrain and bowlGrainImage to next
         }
-
-    
-    var grainImages = [String]()
-    var grainNames = [String]()
-    var grainCopy = [String]()
-    var grainInfo = [String]()
-    var grainPurch = [String]()
-    
-   
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        
+        
+        for i in 0 ..< grainCopy.count {
+            let newIngredient = Ingredient(name: grainNames[i],
+                                           imageString: grainImages[i],
+                                           copy: grainCopy[i],
+                                           info: grainInfo[i],
+                                           purchaseURL: grainPurch[i],
+                                           type: .grain)
+            ingredients.append(newIngredient)
+        }
         
         grainImages = [
             "Barley.jpg",
@@ -100,7 +107,6 @@ class IngredientTableViewController: UITableViewController, CellProtocol {
             "https://www.amazon.com",
             "https://www.amazon.com"]
         
-    //    isOn = false
         
         tableView.estimatedRowHeight = 50
 
@@ -134,8 +140,8 @@ class IngredientTableViewController: UITableViewController, CellProtocol {
         
         let row = indexPath.row
         cell.ingredientName.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
-        cell.ingredientName.text = grainNames[row]
-        cell.ingredientImage.image = UIImage(named: grainImages[row])
+        cell.ingredientName.text = ingredients[row].name
+        cell.ingredientImage.image = UIImage(named: ingredients[row].imageString)
       //  cell.ingredientSwitch.isOn
         // Configure the cell...
         cell.delegate = self
@@ -189,6 +195,7 @@ class IngredientTableViewController: UITableViewController, CellProtocol {
         // Pass the selected object to the new view controller.
         if segue.identifier == "ShowGrainDetails" {
             let detailViewController = segue.destination as! IngredientDetailViewController
+            //detailViewController.ingredients = ingredients
             let myIndexPath = self.tableView.indexPathForSelectedRow!
             let row = myIndexPath.row
             detailViewController.ingredientDetailImages = grainImages[row]
@@ -197,6 +204,10 @@ class IngredientTableViewController: UITableViewController, CellProtocol {
             detailViewController.ingredientPurchase = grainPurch[row]
         }
        
+        if segue.identifier == "SelectLiquid" {
+            let LiquidTableViewController = segue.destination as! IngredientTableViewController
+            LiquidTableViewController.ingredients = ingredients
+        }
     }
     
     

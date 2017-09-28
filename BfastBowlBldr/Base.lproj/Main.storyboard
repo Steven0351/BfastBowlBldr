@@ -57,7 +57,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="dsF-Y6-NpQ" kind="show" identifier="buildBowl" id="OZC-DI-yPX"/>
+                                            <segue destination="dsF-Y6-NpQ" kind="show" identifier="SelectGrain" id="OZC-DI-yPX"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="0Yx-rU-dyl">
@@ -264,7 +264,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
-                                <segue destination="2SW-P5-9tf" kind="show" id="eLG-oD-Eqd"/>
+                                <segue destination="2SW-P5-9tf" kind="show" identifier="SelectAddIn" id="eLG-oD-Eqd"/>
                             </connections>
                         </button>
                         <prototypes>
@@ -340,7 +340,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
-                                <segue destination="p1B-DK-I4V" kind="show" id="KOf-J6-Mh7"/>
+                                <segue destination="p1B-DK-I4V" kind="show" identifier="SelectFruit" id="KOf-J6-Mh7"/>
                             </connections>
                         </button>
                         <prototypes>
@@ -416,7 +416,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
-                                <segue destination="ZZM-nq-wbH" kind="show" id="F0F-bS-Aab"/>
+                                <segue destination="ZZM-nq-wbH" kind="show" identifier="SelectTopping" id="F0F-bS-Aab"/>
                             </connections>
                         </button>
                         <prototypes>
@@ -492,7 +492,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <connections>
-                                <segue destination="wtC-5r-Awh" kind="show" id="EXM-yY-YI7"/>
+                                <segue destination="wtC-5r-Awh" kind="show" identifier="BuildBowl" id="EXM-yY-YI7"/>
                             </connections>
                         </button>
                         <prototypes>
